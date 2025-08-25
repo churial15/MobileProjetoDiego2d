@@ -9,30 +9,30 @@
 /* body */
 body {
 /* fundo da página */
-  background-image: url('/assets/imagens/trab_mobile_5.png');
-  background-size: 1576px 772px;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: url('/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab_mobile_5.png');
+  background-size: 1576px 772px; /* Define o tamanho da imagem de fundo (largura x altura) */
+  background-position: center; /* Centraliza a imagem de fundo na tela */
+  background-repeat: no-repeat; /* Evita que a imagem de fundo se repita */
 
-  margin: 0;
-  font-family: Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  min-height: 100vh;
-  position: relative;
+  margin: 0; /* Remove a margem padrão da página */
+  font-family: Arial, sans-serif; /* Define a fonte do texto da página */
+  display: flex; /* Ativa o modelo de layout flexível (flexbox) */
+  flex-direction: column; /* Organiza os itens do flex em coluna (de cima para baixo) */
+  align-items: center; /* Alinha os itens no centro horizontal */
+  justify-content: flex-start; /* Posiciona os itens no início vertical (topo) */
+  min-height: 100vh; /* Garante altura mínima de 100% da tela do navegador */
+  position: relative; /* Define o posicionamento relativo do elemento */
 }
 
 /* login-box */
 .login-box {
   background: #525151; /*cor do fundo*/
-  padding: 40px; /*posição, + positivo = para baixo*/
+  padding: 40px; /**/
   border-radius: 15px; /*ponta redonda*/
   box-shadow: 0 8px 20px rgba(0,0,0,0.2); /*cor e aparência da sombra em volta*/
   width: 300px; /*altura da login-box*/
   text-align: center; /*texto alinhado ao centro da login-box*/
-  margin-top: 223px; /*espaçamento da login-box*/
+  margin-top: 279px; /*espaçamento da login-box*/
 }
 
 .login-box h2 {
@@ -73,13 +73,13 @@ body {
 }
 
 .login-box a {
-  color: #043f7a; /**/
-  text-decoration: none; /**/
-  font-weight: bold; /**/
+  color: #043f7a; /*cor da escrita "registrar"*/
+  text-decoration: none; /* Remove decorações do texto (como o sublinhado de links) */
+  font-weight: bold; /* Deixa o texto em negrito */
 }
 
 .login-box a:hover {
-  text-decoration: underline; /**/
+  text-decoration: underline; /*ao passar o cursor em cima da palavra "registrar" aparece uma underline*/
 }
 
 .obrigatorio-texto {
@@ -96,36 +96,37 @@ body {
   text-align: left; /*texto alinhado a esquerda*/
   color: #ffffff; /*cor*/
   font-size: 14px; /*tamanho da escrita*/
-  margin-bottom: 5px;
-  margin-top: 10px;
+  margin-bottom: 5px; /* Define uma margem externa inferior de 5px (espaço abaixo do elemento) */
+  margin-top: 10px; /* Define uma margem externa superior de 10px (espaço acima do elemento) */
 }
 
 /* footer */
 .footer-box {
-  position: fixed;
-  bottom: -27px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 700px;
-  background: #022554;
-  color: #ffffff;
-  text-align: center;
-  padding: 25px 20px;
-  border-radius: 15px;
-  box-shadow: 0 -4px 10px rgba(0,0,0,0.3);
-  font-size: 17px;
+ position: fixed; /* Fixa o elemento na tela (mesmo rolando a página, ele não se move) */
+bottom: -27px; /* Posiciona o elemento 27px abaixo da borda inferior da tela */
+left: 50%; /* Posiciona o elemento a 50% da largura da tela (meio) */
+transform: translateX(-50%); /* Ajusta para centralizar exatamente o elemento no meio horizontal */
+width: 700px; /* Define a largura fixa de 700px */
+background: #022554; /* Cor de fundo azul escuro */
+color: #ffffff; /* Define a cor do texto como branco */
+text-align: center; /* Centraliza o texto dentro do elemento */
+padding: 25px 20px; /* Espaçamento interno: 25px em cima/baixo, 20px nas laterais */
+border-radius: 15px; /* Bordas arredondadas com raio de 15px */
+box-shadow: 0 -4px 10px rgba(0,0,0,0.3); /* Sombra acima do elemento (levemente desfocada e escura) */
+font-size: 17px; /* Define o tamanho da fonte como 17px */
+
 }
 
 /* responsividade */
 @media (max-width: 768px) {
   .footer-box {
-    width: 90%;
-    padding: 15px 10px;
-    font-size: 14px;
+    width: 90%; /* O elemento ocupará 90% da largura do seu contêiner/pai */
+    padding: 15px 10px; /* Espaçamento interno: 15px em cima/baixo e 10px nas laterais */
+    font-size: 14px;  /* Define o tamanho da fonte em */
   }
   .login-box {
-    width: 90%;
-    padding: 30px;
+    width: 90%; /* O elemento ocupa 90% da largura disponível do contêiner/pai */
+    padding: 30px; /* Espaçamento interno de 30px em todos os lados (topo, direita, baixo e esquerda) */
   }
 }
 
@@ -134,9 +135,22 @@ body {
    margin: -8px auto 10px auto; /* sobe 200px, centraliza e dá espaço embaixo */
 
 }
+
+.titulo-pagina {
+  margin-top: 60px;   /* distância do topo da página */
+  margin-bottom: -150px; /* aproxima da login-box */
+  font-size: 28px; /*Define o tamanho da fonte em pixels*/
+  font-weight: bold; /*Define o peso da fonte (quão “grossa” ela fica)-bold deixa em negrito*/
+  color: #ffffff; /*Define a cor da escrita*/
+  text-align: center; /*Define o alinhamento horizontal do texto-center deixa a escrita centralizada*/
+}
+
 </style>
 </head>
 <body>
+
+<!-- título acima da login box -->
+<h1 class="titulo-pagina">SOBRE A BANDA VIRTUAL</h1>
 
 <!-- login box -->
 <div class="login-box">
@@ -152,7 +166,7 @@ body {
     <button type="submit">Entrar</button>
   </form>
   <p>Não tem conta? <a href="#">Registrar</a></p>
-  <img src="/assets/imagens/trab-mobile-6.png" alt="Logo" class="logo">
+  <img src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile-6.png" alt="Logo" class="logo">
 </div>
 
 <!-- footer -->
