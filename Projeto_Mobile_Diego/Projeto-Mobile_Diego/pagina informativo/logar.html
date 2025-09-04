@@ -18,6 +18,7 @@
             text-align: center;
             position:relative;
             z-index: 2;
+            color: #fffdfd;
         }
 
         .opcoes-usuario{
@@ -37,7 +38,24 @@
             margin-left: -12px;
              margin-top: -75px;
             border-radius: 9px;
+            transition: width 0.3s ease;
         }
+
+        .barra-lateral:hover {
+    width: 200px; /* aumenta quando o mouse passa em cima */
+}
+
+.barra-lateral a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+.barra-lateral a:hover {
+    background: rgba(0,0,0,0.2);
+}
 
         .imagem-capa{
             width: 1000px;
@@ -48,9 +66,21 @@
             position: absolute;
             z-index: 1;
         }
+
+        .inicio{
+            color: #ffffff;
+            font-weight: bold;
+            margin-top: 35px;
+            position:relative;
+            z-index: 3;
+        }
     </style>
-    <div class="menu-navegacao"></div>
-    <div class="opcoes-usuario"></div>
+    <div class="menu-navegacao">
+    <a href="index.html" class="inicio">Início</a>
+    </div>
+    <div class="opcoes-usuario">
+        <img class="usuario" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile-15-r.png" alt="imagem usuário">
+    </div>
     <div class="barra-lateral"></div>
     <img class="imagem-capa" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile-10.jpg" alt="é isso aí mano">
 </body>
