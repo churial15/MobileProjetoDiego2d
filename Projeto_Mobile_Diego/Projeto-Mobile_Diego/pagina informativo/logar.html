@@ -29,6 +29,35 @@
             margin-left: auto;
             border-radius: 10px;
             text-align: center;
+            color: #efefef;
+            transition: background-color 0.1s ease;
+        }
+
+        .opcoes-usuario::after {
+    content: "";
+    width: 0;
+    height: 0;
+    margin-left: 25px;
+    margin-top: 55px;
+    border-left: 6px solid transparent;  
+    border-right: 6px solid transparent; 
+    border-top: 8px solid rgb(0, 0, 0);
+}
+
+        .palavra{
+            margin-top: -30px;
+            margin-left: 30px;
+        }
+
+        .opcoes-usuario:hover{
+            background-color:rgb(58, 180, 150);
+        }
+
+        .usuario{
+            width:35px;
+            height: 35px;
+            margin-top:7px;
+            margin-left:-70px;
         }
 
         .barra-lateral{
@@ -80,6 +109,7 @@
     </div>
     <div class="opcoes-usuario">
         <img class="usuario" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile-15-r.png" alt="imagem usuário">
+        <h4 class="palavra">Usuário</h4>
     </div>
     <div class="barra-lateral"></div>
     <img class="imagem-capa" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile-10.jpg" alt="é isso aí mano">
