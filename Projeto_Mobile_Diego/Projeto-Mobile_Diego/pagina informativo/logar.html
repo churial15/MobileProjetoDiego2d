@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>História dos Goorilaz</title>
      <link rel="png" type="images/png" href="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile-10.jpg">
+     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 </head>
 <body>
     <style>
         .menu-navegacao{
             width: 300px;
             height: 100px;
-            background-color:antiquewhite;
+            background-color:rgb(255, 229, 195);
              margin: 0 auto;
              margin-top: -50px;
              border-radius: 13px;
             text-align: center;
             position:relative;
-            z-index: 2;
+            z-index: 1;
             color: #fffdfd;
         }
 
@@ -31,19 +32,22 @@
             text-align: center;
             color: #efefef;
             transition: background-color 0.1s ease;
+            position: relative;
         }
 
         .opcoes-usuario::after {
     content: "";
     width: 0;
     height: 0;
-    margin-left: 25px;
-    margin-top: 55px;
+    position: absolute;  /* agora se move dentro do botão */
+    bottom: 3px;       /* empurra para baixo do botão */
+    left: 80px;           /* centraliza horizontal */
+    top: 37px;
+    transform: translateX(-50%); /* centraliza certinho */
     border-left: 6px solid transparent;  
     border-right: 6px solid transparent; 
     border-top: 8px solid rgb(0, 0, 0);
 }
-
         .palavra{
             margin-top: -30px;
             margin-left: 30px;
@@ -56,7 +60,7 @@
         .usuario{
             width:35px;
             height: 35px;
-            margin-top:7px;
+            margin-top:10px;
             margin-left:-70px;
         }
 
@@ -89,27 +93,56 @@
         .imagem-capa{
             width: 1000px;
             height:330px;
-            margin-top: -712px;
+            margin-top: -760px;
             margin-left: 295px;
             border-radius: 13px;
             position: absolute;
-            z-index: 1;
         }
 
-        .inicio{
-            color: #000000;
-            width: 15px;
-            height: 15px;
-            margin-top: 0px;
-            z-index: 3;
-        }
+        .inicio {
+    color: #043f7a;            /* cor do texto/ícone */
+    font-weight: 800;
+   padding: 15px 15px;        /* espaço interno para o texto */
+    margin-top: 64px;
+    left: -160px;
+    z-index:3;
+    display: inline-block;     /* permite width/height funcionarem */
+    position:relative;        /* para o z-index funcionar */
+    text-align: center;        /* centraliza se for texto */
+    font-family:'Especial Elite, cursive';
+}
 
+.sobre-mim{
+color: #043f7a;            /* cor do texto/ícone */
+font-weight: 800;
+   padding: 15px 17px;        /* espaço interno para o texto */
+    margin-top: 65px;
+    left: 98px;
+    z-index:3;
+    display: inline-block;     /* permite width/height funcionarem */
+    position: absolute;        /* para o z-index funcionar */
+    text-align: center;        /* centraliza se for texto */
+    font-family:'Especial Elite, cursive';
+}
+
+.favoritos{
+    color: #043f7a;            /* cor do texto/ícone */
+    font-weight: 800;
+   padding: 15px 25px;        /* espaço interno para o texto */
+    top: -47px;            /* controla a posição no pai */
+    left: 100px;          /* substitui margin-left */
+    z-index:3;
+    position:relative;        /* para o z-index funcionar */
+    font-family:'Especial Elite, cursive';
+}
         .linha-separatoria{
             width:2px;
             height: 35px;
             background-color:black;
-            margin-top: 35px;
-            margin-left: 80px;
+            top: -105px;
+            left: 100px;
+            position:relative;
+            z-index:2;
 
         }
 
@@ -117,20 +150,119 @@
             width:2px;
             height: 35px;
             background-color:black;
-            margin-top: -35px;
-            margin-left: 212px;
+            top: -140px;
+            left: 200px;
+            position: relative;
+            z-index:2;
         }
-    </style>
 
+        .icone-sobre{
+            width: 43px;
+            height: 35px;
+            top:-10px;
+            left: 33px;
+            position: relative;
+        }
+
+        .icone-favoritos{
+            width:40px;
+            height:40px;
+            top: -9px;
+            left: 179px;
+            position: relative;
+        }
+
+        .icone-inicio{
+            filter: invert(45%) sepia(100%) saturate(500%) hue-rotate(180deg);
+            width: 35px;
+            height: 31px;
+            top: -13px;
+            left: -105px;
+            position: relative;
+        }
+
+        .botao-invisivel{
+            width: 65px;
+            height: 49px;
+            top: -103px;
+            margin-left: 653px;
+            background-color: transparent;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            position: relative;
+            z-index: 1;
+        }
+
+        .botao-invisivel:hover{
+            background-color:rgb(206, 206, 206);
+            opacity: 0.5;
+        }
+
+        .botao-invisivel2{
+            width: 85px;
+            height: 50px;
+            top: -103px;
+            margin-left: 18px;
+            background-color:transparent;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            position: relative;
+            z-index: 1;
+        }
+
+        .botao-invisivel2:hover{
+            background-color:rgb(206, 206, 206);
+            opacity: 0.5;
+        }
+
+        .botao-invisivel3{
+            width: 75px;
+            height: 50px;
+            top: -103px;
+            margin-left: 15px;
+            background-color:transparent;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            position: relative;
+            z-index: 1;
+        }
+
+        .botao-invisivel3:hover{
+            background-color:rgb(206, 206, 206);
+            opacity: 0.5;
+        }
+    </style> 
     <div class="menu-navegacao">
+    <img class="icone-favoritos" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile-13-r.png">
+    <img class="icone-sobre" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile-14-r.png">
+    <img class="icone-inicio" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile-21-r.png">
    <div class="inicio">Início</div>
+
+   <div class="sobre-mim">Sobre mim</div>
+    <div class="favoritos">favoritos</div>
     <div class="linha-separatoria"></div>
     <div class="linha-separatoria2"></div>
     </div>
+
+   
+
     <div class="opcoes-usuario">
         <img class="usuario" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile-15-r.png" alt="imagem usuário">
         <h4 class="palavra">Usuário</h4>
     </div>
+<button class="botao-invisivel"></button>
+<button class="botao-invisivel2"></button>
+<button class="botao-invisivel3"></button>
+
     <div class="barra-lateral"></div>
     <img class="imagem-capa" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile-10.jpg" alt="é isso aí mano">
 </body>
