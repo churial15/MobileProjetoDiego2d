@@ -25,22 +25,49 @@
         .opcoes-usuario{
             width: 130px;
             height: 50px;
-            background-color:rgb(57, 142, 142) ;
+            background-color:transparent;
             margin-top: -55px;
-            left: 1310px;
+            left: 1340px;
             border-radius:10px;
             text-align: center;
             color: #efefef;
             transition: background-color 0.1s ease;
-            position: relative;
+            position:sticky;
             z-index: 2;
         }
 
+        .opcoes-5{
+            width:130px;
+            height:255px;
+            top:-695px;
+            left:1340px;
+            position: relative;
+            border-radius: 13px;
+            background-color:#043f7a;
+        }
+
+        .linhas-1{
+            width:2px;
+            height: 35px;
+            background-color:black;
+            transform: rotate(90deg);
+            top: -925px;
+            left: 1350px;
+            position:relative;
+            z-index:2;
+        }
+
+        .linhas-2{}
+
+        .linhas-3{}
+
+        .linhas-4{}
+
         .opcoes-usuario:hover{
-            background-color:rgb(58, 180, 150);
+            background-color:#0854a0d1;
         }
         .envoltorio{
-            width: 200px;
+            width: 249px;
             height: 83px;
             top: -703px;
             left: 1305px;
@@ -48,6 +75,50 @@
             position: relative;
             border-radius: 8px;
         }
+
+        .linha{
+            width: 3px;
+            height:60px;
+            top:-773px;
+            left:1470px;
+            opacity: 15%;
+            background-color:rgb(255, 255, 255) ;
+            position: relative;
+            z-index: 5;
+        }
+
+        .botao-luz{
+        width: 60px;
+      height: 20px;
+      background-color: #ccc;
+      top: -785px;
+      left: 1365px;
+      border-radius: 30px;
+      position: relative;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+        }
+
+        .botao-luz::before{
+      content: "";
+      width: 16px;
+      height: 16px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 50%;
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .botao-luz.active {
+      background-color: #000000;
+    }
+
+    .botao-luz.active::before {
+      transform: translateX(40px);
+    }
 
         .opcoes-usuario::after {
     content: "";
@@ -197,7 +268,7 @@ font-weight: 800;
             width: 65px;
             height: 49px;
             top: -49px;
-            margin-left: 653px;
+            margin-left: 646px;
             background-color: transparent;
             border: none;
             border-radius: 8px;
@@ -278,5 +349,12 @@ font-weight: 800;
     <div class="barra-lateral"></div>
     <img class="imagem-capa" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile-10.jpg" alt="é isso aí mano">
 <div class="envoltorio"></div>
+<div class="linha"></div>
+<div class="botao-luz" onclick="this.classList.toggle('active')"></div>
+<div class="opcoes-5"></div>
+<div class="linhas-1"></div>
+<div class="linhas-2"></div>
+<div class="linhas-3"></div>
+<div class="linhas-4"></div>
 </body>
 </html>
