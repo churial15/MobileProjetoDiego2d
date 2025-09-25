@@ -27,12 +27,12 @@
             height: 50px;
             background-color:transparent;
             margin-top: -55px;
-            left: 1323px;
+            left: 1340px;
             border-radius:10px;
             text-align: center;
             color: #efefef;
             transition: background-color 0.1s ease;
-            position:relative;
+            position:sticky;
             z-index: 2;
         }
 
@@ -120,14 +120,24 @@
     width: 190px;
     height: 255px;
     position: relative;
-    top: -735px;
+    top: -833px;
     left: 1300px;
     border-radius: 13px;
-    background-color: #043f7a;
-    z-index: 1;
+    background-color: #043668;
     padding: 10px;
     box-sizing: border-box;
+    opacity: 0;                  /* invisível no início */
+    pointer-events: none;        /* não interage invisível */
+    transition: top 0.6s ease, opacity 0.3s ease; /* anima top e opacidade */
 }
+
+.opcoes-5.ativo {
+    top: -770px;   /* posição final que você quer */
+    opacity: 1;    /* visível */
+    pointer-events: auto;
+    
+}
+
 
 /* Linhas decorativas */
 .linhas-1, .linhas-2, .linhas-3, .linhas-4 {
@@ -189,6 +199,7 @@
             left: 1305px;
             background-color: #043f7a;
             position: relative;
+            z-index: 1;
             border-radius: 8px;
         }
 
@@ -466,6 +477,7 @@ font-weight: 800;
     </div>
     <img class="imagem-capa" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile-10.jpg" alt="é isso aí mano">
 <div class="envoltorio">
+    <div class="marca-texto"></div>
 </div>
 <div class="linha"></div>
 <div class="botao-luz" onclick="this.classList.toggle('active')"></div>
@@ -487,6 +499,17 @@ font-weight: 800;
 <div class="clique2"></div>
 <div class="clique3"></div>
 </div>
+
+<script>
+const botaoUsuario = document.querySelector('.opcoes-usuario');
+const painelOpcoes = document.querySelector('.opcoes-5');
+
+botaoUsuario.addEventListener('click', () => {
+    painelOpcoes.classList.toggle('ativo');
+});
+</script>
+
+
 
 </body>
 </html>
