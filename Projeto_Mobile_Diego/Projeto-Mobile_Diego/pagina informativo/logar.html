@@ -36,6 +36,15 @@
             z-index: 2;
         }
 
+        .marcador{
+            width: 50px;
+            height: 59px;
+            top: 15px;
+            left: 185px;
+            position: relative;
+            z-index: 3;
+        }
+
         .clique{
             width: 135px;
             height: 25px;
@@ -224,6 +233,7 @@
       position: relative;
       cursor: pointer;
       transition: background-color 0.3s ease;
+      z-index: 3;
         }
 
         .botao-luz::before{
@@ -477,7 +487,7 @@ font-weight: 800;
     </div>
     <img class="imagem-capa" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile-10.jpg" alt="é isso aí mano">
 <div class="envoltorio">
-    <div class="marca-texto"></div>
+    <img class="marcador" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/marcador.png">
 </div>
 <div class="linha"></div>
 <div class="botao-luz" onclick="this.classList.toggle('active')"></div>
