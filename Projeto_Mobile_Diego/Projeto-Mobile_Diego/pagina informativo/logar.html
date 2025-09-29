@@ -36,28 +36,68 @@
             z-index: 2;
         }
 
-        .marcador{
-            width: 50px;
-            height: 59px;
-            top: 15px;
-            left: 185px;
-            position: relative;
-            z-index: 3;
-        }
+        /* Contêiner para manter as duas imagens sobrepostas */
+.marcador-container {
+    position: relative;
+    width: 50px;
+    height: 59px;
+}
 
-        .marcador1{
-            width: 50px;
-            height: 59px;
-            top: 15.9px;
-            left: 189px;
-            position: absolute;
-            z-index: 3;
-            background-color:transparent;
-            transition: background-color 1 ease;
+/* Imagem original */
+.marcador {
+    width: 50px;
+    height: 59px;
+    position: absolute;
+    top: 11px;
+    left: 180px;
+    z-index: 1;
+
+    transition: opacity 0.5s ease;
+}
+
+/* Imagem que aparece no hover */
+.marcador1 {
+    width: 50px;
+    height: 59px;
+    position: absolute;
+    top: 11px;
+    left: 180px;
+    z-index: 2;
+
+    opacity: 0; /* começa invisível */
+    transition: opacity 0.5s ease;
+}
+
+/* Quando passar o mouse no container */
+.envoltorio:hover .marcador {
+    opacity: 0; /* some */
+}
+
+.envoltorio:hover .marcador1 {
+    opacity: 1; /* aparece */
+}
+
+.botao-suave{
+            width: 20px;
+            height: 29px;
+            top: 17px;
+            margin-left: 175px;
+            background-color: transparent;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
             cursor: pointer;
-            
-
+            transition: background-color 0.3s ease;
+            position: relative;
+            z-index: 2;
         }
+
+        .botao-suave:hover{
+            background-color:rgba(206, 206, 206, 0.128);
+            opacity: 0.5;
+        }
+
+
 
         .clique{
             width: 135px;
@@ -503,6 +543,7 @@ font-weight: 800;
 <div class="envoltorio">
     <img class="marcador" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/marcador.png">
     <img class="marcador1" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/marcador1.png">
+    <div class="botao-suave"></div>
 </div>
 <div class="linha"></div>
 <div class="botao-luz" onclick="this.classList.toggle('active')"></div>
