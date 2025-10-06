@@ -730,9 +730,14 @@
     top: -355px;
     left: 500px;
     background-color: #ff0000;
+    box-shadow: -8px 8px 5px rgba(0, 0, 0, 0.5); /* sombra suave ao redor */
     position: relative;
     z-index: 5;
     border-radius: 12px;
+}
+
+        .veja{
+    
 }
 
         .imagem-capa{
@@ -960,7 +965,9 @@ font-weight: 800;
 <div class="clique3"></div>
 </div>
 <img src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/imagem-de-fundo.png" class="imagem-de-fundo">
-<div class="sem-texto-marcado"></div>
+<div class="sem-texto-marcado">
+    <h4 class="veja">há nenhum texto marcado por você!</h4>
+</div>
 
 <script>
 const botaoUsuario = document.querySelector('.opcoes-usuario');
@@ -975,3 +982,4 @@ botaoUsuario.addEventListener('click', () => {
 
 </body>
 </html>
+
