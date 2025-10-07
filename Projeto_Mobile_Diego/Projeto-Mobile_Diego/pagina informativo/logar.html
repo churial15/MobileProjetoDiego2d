@@ -63,7 +63,7 @@
     top: 11px;
     left: 189px;
     z-index: 2;
-
+    cursor: pointer;
     opacity: 0; /* começa invisível */
     transition: opacity 0.5s ease;
 }
@@ -725,19 +725,35 @@
 }
 
 .sem-texto-marcado{
-    width: 55px;
-    height: 55px;
-    top: -355px;
-    left: 500px;
-    background-color: #ff0000;
+    border: 1px solid #000000;
+    width: 405px;
+    height: 80px;
+    top: -1715px;
+    left: 1135px;
+    background-color: #ffffff;
     box-shadow: -8px 8px 5px rgba(0, 0, 0, 0.5); /* sombra suave ao redor */
     position: relative;
     z-index: 5;
     border-radius: 12px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-        .veja{
-    
+.sem-texto-marcado:hover{
+    opacity: 1;
+}
+
+.sem-texto-marcado .veja{
+    align-items: center;
+    position: relative;
+    color:#000000;
+    font-size: 15px;
+    top: 15px;
+    left: 80px;
+    text-decoration: 1.5px red underline;
+    font-family:Arial, Helvetica, sans-serif;
+
 }
 
         .imagem-capa{
@@ -982,4 +998,3 @@ botaoUsuario.addEventListener('click', () => {
 
 </body>
 </html>
-
