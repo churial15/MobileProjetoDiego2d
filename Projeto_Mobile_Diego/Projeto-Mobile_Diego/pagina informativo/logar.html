@@ -63,7 +63,7 @@
 }
 
 /* Imagem que aparece no hover */
-.marcador1 {
+.marcador1{
     width: 50px;
     height: 59px;
     position: absolute;
@@ -722,6 +722,21 @@
     opacity: 0.4;
 }
 
+.barra-lateral .imagem-legal{
+    width: 120px;
+    height: 70px;
+    left: 29px;
+    top: 5px;
+    position: relative;
+    z-index: 6;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.barra-lateral:hover .imagem-legal{
+    opacity: 1;
+}
+
 .imagem-de-fundo{
     width: 1554px;
     height: 700px;
@@ -914,6 +929,7 @@ font-weight: 800;
             background-color:rgb(206, 206, 206);
             opacity: 0.5;
         }
+
     </style> 
     <div class="menu-navegacao">
     <img class="icone-favoritos" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile-13-r.png">
@@ -927,7 +943,7 @@ font-weight: 800;
     <div class="linha-separatoria2"></div>
     </div>
 
-   
+
 
     <div class="opcoes-usuario">
         <img class="usuario" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile-15-r.png" alt="imagem usuário">
@@ -959,6 +975,7 @@ font-weight: 800;
         <div class="reta7"></div>
         <div class="reta8"></div>
         <div class="reta9"></div>
+        &reg;<img class="imagem-legal" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile-6.png"> 
         </span>
     </div>
     <img class="imagem-capa" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile-10.jpg" alt="é isso aí mano">
