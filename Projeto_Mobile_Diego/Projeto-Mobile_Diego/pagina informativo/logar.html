@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -723,9 +723,9 @@
 }
 
 .barra-lateral .imagem-legal{
-    width: 120px;
+    width: 150px;
     height: 70px;
-    left: 29px;
+    left: 10px;
     top: 5px;
     position: relative;
     z-index: 6;
@@ -744,6 +744,7 @@
     left: 0px;
     position: relative;
     z-index: -2;
+    opacity: 0.8;
 }
 
 .sem-texto-marcado{
@@ -930,6 +931,32 @@ font-weight: 800;
             opacity: 0.5;
         }
 
+        .título{
+            top:-1500px;
+            left: 260px;
+            font-size: 30px;
+            color:rgb(0, 151, 0);
+            stroke-width: 10px;
+            position: relative;
+            z-index: 7;
+        }
+
+        .barra-lateral .símbolo-registrado{
+            display: block;
+            top: -57px;
+            position: relative;
+            left: 160px;
+            width: 10px;
+            height: 10px;
+            stroke:#000000 3px;
+            opacity: 0;
+            transition: opacity 0.0.0.1ms ease;
+        }
+
+        .barra-lateral:hover .símbolo-registrado{
+            opacity: 1;
+        }
+
     </style> 
     <div class="menu-navegacao">
     <img class="icone-favoritos" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile-13-r.png">
@@ -975,8 +1002,10 @@ font-weight: 800;
         <div class="reta7"></div>
         <div class="reta8"></div>
         <div class="reta9"></div>
-        &reg;<img class="imagem-legal" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile-6.png"> 
+        <spam class="símbolo-registrado">&reg;</spam>
+        <img class="imagem-legal" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile-6.png"> 
         </span>
+        
     </div>
     <img class="imagem-capa" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile-10.jpg" alt="é isso aí mano">
 <div class="envoltorio">
@@ -1008,6 +1037,8 @@ font-weight: 800;
 <div class="sem-texto-marcado">
     <h4 class="veja">há nenhum texto marcado por você!</h4>
 </div>
+
+<h1 class="título">DESCUBRA A HISTORIA DA BANDA VIRTUAL</h1>
 
 <script>
 const botaoUsuario = document.querySelector('.opcoes-usuario');
