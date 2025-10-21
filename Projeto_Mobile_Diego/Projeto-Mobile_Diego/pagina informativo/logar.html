@@ -15,6 +15,26 @@
 </head>
 <body>
     <style>
+
+        @media (max-width: 768px) {
+            .menu-navegacao {
+            width: 90%;
+            height: auto;
+            flex-direction: column;
+        }
+        .imagem-capa {
+            width: 100%;
+            height: auto;
+            margin: 0;
+        }
+}
+
+
+        body.modo-escuro {
+        background-color: #000;
+        color: #fff;
+        }
+
         .menu-navegacao{
             width: 300px;
             height: 100px;
@@ -1294,6 +1314,13 @@ const painelOpcoes = document.querySelector('.opcoes-5');
 
 botaoUsuario.addEventListener('click', () => {
     painelOpcoes.classList.toggle('ativo');
+});
+</script>
+<script>
+const botao = document.querySelector('.botao-luz');
+botao.addEventListener('click', () => {
+  botao.classList.toggle('active');
+  document.body.classList.toggle('modo-escuro');
 });
 </script>
 </body>
