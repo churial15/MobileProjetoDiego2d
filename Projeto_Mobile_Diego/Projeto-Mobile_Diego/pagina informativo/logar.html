@@ -13,7 +13,7 @@
  <link rel="shortcut icon" href="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile-8-1.png" type="images/png">
      
 </head>
-<body>
+<body class="modo-escuro">
     <style>
 
         @media (max-width: 768px) {
@@ -35,8 +35,6 @@
         }
 }
 
-
-
         .menu-navegacao{
             width: 300px;
             height: 100px;
@@ -50,12 +48,24 @@
             color: #fffdfd;
         }
 
+        body.modo-escuro {
+            background-color: #121212; /* fundo escuro */
+            color: #ffffff; /* texto padrão branco */ 
+        }
+
+    /* Caso queira deixar só os parágrafos brancos, pode fazer assim: */
+        body.modo-escuro p {
+            color: #ffffff;
+        }
+
+
+
         .opcoes-usuario{
             width: 130px;
             height: 50px;
             background-color:transparent;
             margin-top: -58px;
-            left: 1320px;
+            left: 1210px;
             border-radius:10px;
             text-align: center;
             color: #efefef;
@@ -77,7 +87,7 @@
     height: 59px;
     position: absolute;
     top: 11px;
-    left: 189px;
+    left: 169px;
     z-index: 1;
 
     transition: opacity 0.5s ease;
@@ -89,7 +99,7 @@
     height: 59px;
     position: absolute;
     top: 11px;
-    left: 189px;
+    left: 169px;
     z-index: 2;
     cursor: pointer;
     opacity: 0; /* começa invisível */
@@ -109,7 +119,7 @@
             width: 20px;
             height: 29px;
             top: 17px;
-            margin-left: 183px;
+            margin-left: 165px;
             background-color: transparent;
             border: none;
             border-radius: 8px;
@@ -212,7 +222,8 @@
     height: 255px;
     position: relative;
     top: -833px;
-    left: 1280px;
+    left: 1170px;
+    z-index: 3;
     border-radius: 13px;
     background-color: #043668;
     padding: 10px;
@@ -298,7 +309,7 @@
             width: 3px;
             height:60px;
             top:-797px;
-            left:1457px;
+            left:1337px;
             opacity: 15%;
             background-color:rgb(255, 255, 255) ;
             position: relative;
@@ -310,7 +321,7 @@
       height: 20px;
       background-color: #ccc;
       top: -810px;
-      left: 1349px;
+      left: 1239px;
       border-radius: 30px;
       position: relative;
       cursor: pointer;
@@ -1404,6 +1415,17 @@ font-weight: 800;
             z-index: 20;
         }
 
+        .extra3{
+            top: 2685px;
+            left: -289px;
+            text-align: center;
+            font-size: 23px;
+            color: #000;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            z-index: 20;
+        }
+
         .cap7{
             width: 1348px;
             background-color:rgb(66, 218, 76);
@@ -1411,7 +1433,7 @@ font-weight: 800;
             padding: 0.1px 4px;
             border-radius: 5px;
             font-size: 35px;
-            top: 2690px;
+            top: 2740px;
             left: 53px;
             color:rgb(5, 124, 31);
             font-family: Arial, Helvetica, sans-serif;
@@ -1420,15 +1442,47 @@ font-weight: 800;
         }
 
         .paragrafo27{
-
+            top: 2795px;
+            left: -289px;
+            text-align: center;
+            font-size: 23px;
+            color: #000;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            z-index: 20;
         }
 
         .paragrafo28{
-
+            top: 2865px;
+            left: 319px;
+            text-align: center;
+            font-size: 23px;
+            color: #000;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            z-index: 20;
         }
 
         .paragrafo29{
+            top: 2955px;
+            left: -289px;
+            text-align: center;
+            font-size: 23px;
+            color: #000;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            z-index: 20;
+        }
 
+        .extra4{
+            top: 3025px;
+            left: 279px;
+            text-align: center;
+            font-size: 23px;
+            color: #000;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            z-index: 20;
         }
         
         .cap8{
@@ -1438,12 +1492,67 @@ font-weight: 800;
             padding: 0.1px 4px;
             border-radius: 5px;
             font-size: 35px;
-            top: 2990px;
+            top: 3060px;
             left: 53px;
             color:rgb(5, 124, 31);
             font-family: Arial, Helvetica, sans-serif;
             position: relative;
             z-index: 11px;
+        }
+
+        .paragrafo30{
+            top: 3095px;
+            left: -289px;
+            text-align: center;
+            font-size: 23px;
+            color: #000;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            z-index: 20;
+        }
+
+        .paragrafo31{
+            top: 3175px;
+            left: 285px;
+            text-align: center;
+            font-size: 23px;
+            color: #000;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            z-index: 20;
+        }
+
+        .paragrafo32{
+            top: 3265px;
+            left: -289px;
+            text-align: center;
+            font-size: 23px;
+            color: #000;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            z-index: 20;
+        }
+
+        .extra5{
+            top: 3295px;
+            left: 339px;
+            text-align: center;
+            font-size: 23px;
+            color: #000;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            z-index: 20;
+        }
+
+        .extra6{
+            top: 3370px;
+            left: -289px;
+            text-align: center;
+            font-size: 23px;
+            color: #000;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            z-index: 20;
         }
     </style> 
     <div class="menu-navegacao">
@@ -1577,21 +1686,52 @@ A música é uma<br> fusão perfeita entre hip-hop, rock alternativo e pop eletr
 <p class="paragrafo26">Enquanto o refrão, cantado por 2-D (voz de Damon Albarn),<br> é melódico e melancólico, os versos de rap trazem energia e ironia.<br> Essa dualidade sonora simboliza o conflito central da canção:<br> o contraste entre a falsa alegria e o vazio interior.</p>
 <p class="extra2">A “Feel Good Inc.”, dentro do universo dos Gorillaz, é uma corporação fictícia<br> que fabrica prazer, entretenimento e distração — mas de forma superficial,<br> como um produto de consumo.
 Ela representa a indústria da mídia, a publicidad<br> e o capitalismo emocional, que vendem a ideia de felicidade instantânea,<br> enquanto as pessoas se tornam cada vez mais vazias.<br>
-
 O refrão suave (“Feel good... sha-la-la-la...”) soa quase como um mantra,<br> algo repetido para convencer o ouvinte de que tudo está bem<br> — mesmo quando não está.
-
 Damon Albarn usa a voz calma de 2-D para mostrar um personagem<br> preso dentro desse sistema: ele vive cercado por barulho, risadas artificiais<br> e aparente diversão, mas o que sente é isolamento e tristeza.</p>
+<p class="extra3">“Feel Good Inc.” é, no fundo, uma sátira sobre<br> a cultura do entretenimento.
+O título é uma ironia: a “Inc.” (de “Incorporated”)<br> mostra que até o sentimento de “se sentir bem” virou uma marca, uma empresa.<br>
+A música questiona:<br>
+Será que estamos realmente felizes — ou apenas distraídos?<br>
+Mesmo com um som dançante, a canção carrega um peso existencial,<br> algo que Damon Albarn sempre explorou em suas composições:<br> a ideia de que a felicidade moderna é construída em cima de aparências, likes e consumo.</p>
 <!--[VÍDEO]-->
 <h3 class="cap7">CAP.7:Clintweast Wood</h3>
-    <p class="paragrafo27"></p>
-    <p class="paragrafo28"></p>
-    <p class="paragrafo29"></p>
+    <p class="paragrafo27">Lançada em 2001, como o primeiro grande sucesso do Gorillaz, “Clint Eastwood” é mais<br> do que uma música — é a origem espiritual da banda virtual.<br>
+Com sua mistura única de hip-hop, dub e melancolia britânica,<br> a canção revelou o tom que guiaria o universo do grupo:<br> uma combinação de ritmo, reflexão e estranheza.</p>
+    <p class="paragrafo28">Desde o primeiro beat, “Clint Eastwood” soa como algo que veio de outro mundo.<br>
+O baixo lento e arrastado, as batidas com ecos eletrônicos<br> e o teclado sombrio criam uma atmosfera hipnótica<br> — ao mesmo tempo vintage e futurista.<br>
+O rap é feito por Del the Funky Homosapien, que interpreta Del the Ghost Rapper,<br> o espírito que possui o corpo do baterista Russel Hobbs<br> dentro da história fictícia da banda.<br>
+Enquanto isso, 2-D (voz de Damon Albarn) canta o refrão,<br> melancólico e quase espiritual, em contraste com o rap enérgico<br> e cheio de autoconfiança de Del.
+Essa combinação cria uma tensão simbólica:<br> o duelo entre corpo e alma, razão e instinto, escuridão e luz.</p>
+    <p class="paragrafo29">O título é uma homenagem direta ao ator e diretor Clint Eastwood,<br> conhecido por seus papéis em faroestes e filmes de anti-heróis solitários.<br>
+A música carrega essa mesma energia: o protagonista é um tipo de pistoleiro espiritual,<br> alguém que desperta em um mundo decadente, pronto para enfrentar seus<br> próprios demônios.
+Damon Albarn declarou que o nome surgiu porque o som do beat<br> “lembrava a trilha sonora de um faroeste moderno”<br> — algo entre o deserto e o urbano, entre o velho e o novo.</p>
+<p class="extra4">O videoclipe, animado por Jamie Hewlett, é um marco.<br>
+Mostra a banda tocando em um cenário pós-apocalíptico,<br> com Del aparecendo como um fantasma azul que sai da cabeça de Russel,<br> dançando no ar e rimando.
+A estética mistura terror,<br> hip-hop e melancolia, apresentando o estilo que definiria<br> toda a identidade visual dos Gorillaz:
+um mundo sujo, digital<br> e espiritualmente distorcido.
+É ali que tudo começa<br> — o nascimento da banda virtual e a apresentação de seus arquétipos:<br>
+Murdoc, o manipulador; 2-D, o sonhador; Russel, o guardião; Noodle, a força misteriosa.</p>
 <!--[VÍDEO]-->
 <h3 class="cap8">CAP.8:Cracker Sland</h3>
-    <p class="paragrafo30"></p>
-    <p class="paragrafo31"></p>
-    <p class="paragrafo32"></p>
+    <p class="paragrafo30">Lançada em 2022, no álbum de mesmo nome, “Cracker Island”<br> marca o retorno dos Gorillaz com uma sonoridade moderna e uma crítica afiada<br> à cultura das redes, das falsas utopias e da busca cega por sentido.<br>
+Com a participação de Thundercat, o som da música é um mistério colorido<br> — um funk psicodélico e eletrônico que esconde uma história sombria<br> sobre fé, manipulação e autoengano.</p>
+    <p class="paragrafo31">Logo nas primeiras notas, Cracker Island mistura baixo pulsante,<br> sintetizadores suaves e vocais etéreos.
+A produção é dançante, quase hipnótica,<br> mas há algo de inquietante por trás — como se a música sorrisse,<br> mas com um olhar vazio.
+A presença de Thundercat adiciona camadas de groove<br> e virtuosismo, enquanto Damon Albarn (2-D) canta com um tom melancólico e distante,<br> descrevendo um lugar paradisíaco que parece cada vez mais falso.<br>
+É o tipo de ironia sonora que os Gorillaz dominam:<br> uma batida “feliz” que esconde um grito de desespero digital.</p>
+    <p class="paragrafo32">“Cracker Island” é uma metáfora sobre as seitas modernas<br> — não as religiosas tradicionais, mas as criadas pela internet,<br> pelas ideologias de consumo e pelas bolhas digitais.<br>
+No universo fictício dos Gorillaz, a banda se muda para<br> uma ilha onde todos seguem uma nova doutrina espiritual liderada<br> por Murdoc, que acredita ser o “messias da música”.<br>
+Mas fora da ficção, Damon Albarn usa essa história para criticar<br> como as pessoas buscam sentido em falsos gurus, influenciadores,<br> modas e ideologias superficiais.
+A “ilha” é o símbolo desse refúgio ilusório<br> — um paraíso fabricado, onde todos acreditam ter encontrado a verdade,<br> mas estão apenas sendo manipulados.</p>
+<p class="extra5">“They made a cult out of my name / They thought I was holy”<br>
+(“Fizeram um culto com o meu nome / Pensaram que eu era sagrado”)<br>
+A letra revela a confusão entre identidade, fama e fé<br> — um reflexo direto do mundo contemporâneo, onde até o ego virou religião.</p>
+<p class="extra6">No fundo, “Cracker Island” é sobre a solidão<br> disfarçada de pertencimento.
+As pessoas entram em “ilhas”<br> — físicas ou virtuais — acreditando ter encontrado paz,<br> mas apenas se isolam do mundo real.
+A música alerta sobre como o desejo de<br> pertencer pode nos tornar vulneráveis à manipulação, e como a fé cega,<br> mesmo nas coisas modernas (como marcas, ideologias ou artistas),<br> pode se tornar uma prisão mental.
+Enquanto o refrão repete<br> “On Cracker Island, it was born”, o tom soa quase como um cântico de seita<br> — suave, mas perturbador.</p>
 <!--[VÍDEO]-->
+<footer class="referencias"></footer>
 <script>
 const botaoUsuario = document.querySelector('.opcoes-usuario');
 const painelOpcoes = document.querySelector('.opcoes-5');
