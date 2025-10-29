@@ -49,7 +49,7 @@
         }
 
         body.modo-escuro {
-            background-color: #121212; /* fundo escuro */
+            background-color: #000000; /* fundo escuro */
             color: #ffffff; /* texto padrão branco */ 
         }
 
@@ -217,7 +217,7 @@
             opacity: 0.5;
         }
 
-        .opcoes-5 {
+        .opcoes-5{
     width: 190px;
     height: 255px;
     position: relative;
@@ -233,7 +233,7 @@
     transition: top 0.6s ease, opacity 0.3s ease; /* anima top e opacidade */
 }
 
-.opcoes-5.ativo {
+.opcoes-5.ativo{
     top: -770px;   /* posição final que você quer */
     opacity: 1;    /* visível */
     pointer-events: auto;
@@ -907,7 +907,7 @@ font-weight: 800;
             width: 65px;
             height: 49px;
             top: -53px;
-            margin-left: 620px;
+            margin-left: 646px;
             background-color: transparent;
             border: none;
             border-radius: 8px;
@@ -1776,13 +1776,13 @@ const botaoUsuario = document.querySelector('.opcoes-usuario');
 const painelOpcoes = document.querySelector('.opcoes-5');
 
 botaoUsuario.addEventListener('click', () => {
-    painelOpcoes.classList.toggle('active');
+    painelOpcoes.classList.toggle('ativo');
 });
 </script>
 <script>
 const botao = document.querySelector('.botao-luz');
 botao.addEventListener('click', () => {
-  botao.classList.toggle('active');
+  botao.classList.toggle('ativo');
   document.body.classList.toggle('modo-escuro');
 });
 </script>
