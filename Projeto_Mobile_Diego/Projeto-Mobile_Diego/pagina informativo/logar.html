@@ -916,7 +916,7 @@ font-weight: 800;
             width: 65px;
             height: 49px;
             top: -53px;
-            margin-left: 41.5%;
+            margin-left: 40.9vw;
             background-color: transparent;
             border: none;
             border-radius: 8px;
@@ -2610,6 +2610,123 @@ font-weight: 800;
             font-family:'Times New Roman', Times, serif;
         }
 
+        fieldset {
+            border: 3px solid #043f7a;
+            border-radius: 10px;
+            padding: 30px;
+            width: 90%;        /* ocupa 90% da largura do container */
+            margin: 50px auto; /* centraliza horizontalmente */
+            margin-top: -30%;
+            background-color: rgba(255, 229, 195, 0.323);
+        }
+
+        legend{
+            color: rgb(7, 29, 110);
+            padding: 0 10px;
+            font-family: 'Special Elite', cursive;
+            font-weight: 600;
+        }
+
+        label{
+            margin-bottom: 5px;
+            color: #222;
+            font-family: 'Special Elite', cursive;
+        }
+
+        input[type="number"],
+        input[type="month"]{
+            padding: 7px 10px;
+            border: 1px solid #043f7a;
+            border-radius: 6px;
+            outline: none;
+        }
+
+        #avaliacao,
+        #avaliacao1 {
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 5px;
+        }
+
+        #avaliacao{
+            margin-left: 6%;
+        }
+
+        #avaliacao1{
+            margin-left: 20.9%;
+        }
+
+        #avaliacao2{
+            margin-left: 20%;
+        }
+
+        input[type="radio"]{
+            margin-right: 6px;
+        }
+
+        #iconhecimento, #iconhecimento1, #iconhecimento2, #iconhecimento3{
+            margin-left: 6%;
+            margin-top: 1%;
+        }
+
+        #avaliacao3{
+            margin-left: 33%;
+            margin-top: 3%;
+        }
+
+        #feel, #clint, #cracker{
+            margin-left: 10%;
+            margin-top: 1%;
+        }
+
+        #botoes-finais{
+            margin-left: 32%;
+            margin-top: 1%;
+        }
+
+        #botoes-finais input[type="submit"]{
+            margin-left: 40%;
+            margin-top: 3%;
+            background-color: rgb(5, 124, 31);
+            border: none;
+            color: #ffffff;
+            font-family: 'Special Elite';
+            padding: 8px 50px;
+            border-radius: 5%;
+            cursor: pointer;
+            margin: 35px;
+            background-image: linear-gradient(to bottom, rgb(8, 183, 46), rgb(2, 40, 10));
+        }
+
+        #botoes-finais input[type="submit"]:hover{
+            background-image: linear-gradient(rgb(2, 40, 10), rgb(2, 40, 10));
+        }
+
+        #botoes-finais input[type="submit"]:active{
+            box-shadow: 3px 3px 5px black;
+            transform: translateY(2px); /* desce um pouquinho pra parecer pressionado */
+        }
+
+        #botoes-finais input[type="reset"]{
+            background-color: rgb(5, 124, 31);
+            border: none;
+            color: #ffffff;
+            font-family: 'Special Elite';
+            padding: 8px 50px;
+            border-radius: 5%;
+            cursor: pointer;
+            background-image: linear-gradient(to bottom, rgb(8, 183, 46), rgb(2, 40, 10));
+        }
+
+        #botoes-finais input[type="reset"]:hover{
+            background-image: linear-gradient(rgb(2, 40, 10), rgb(2, 40, 10));
+        }
+
+        #botoes-finais input[type="reset"]:active{
+            box-shadow: 3px 3px 5px black;
+            transform: translateY(2px); /* desce um pouquinho pra parecer pressionado */
+        }
+
         footer.referencias{
             box-shadow: 0px 0px 20px 9px rgba(0, 0, 0, 0.681);
             position: relative;
@@ -3080,6 +3197,53 @@ Enquanto o refrão repete<br> “On Cracker Island, it was born”, o tom soa qu
     </p>
 </section>
 
+<fieldset>
+  <legend>Questionário sobre o usuário</legend>
+
+    <p id="avaliacao">
+        <label for="inota"><strong>O quanto você avalia este site?</strong></label>
+        <input type="number" name="nota" id="inota" min="0" max="10" placeholder="0 a 10" step="0.1" required>
+    </p>
+
+    <p id="avaliacao1">
+        <label for="idata"><strong>Em que dia você terminou de ler este conteúdo?</strong></label>
+        <input type="month" name="data" id="idata">
+    </p>
+
+    <p id="avaliacao2">
+        <label for="iconhecimento"><strong>Você já ouviu ou já conhecia a banda virtual goorilaz antes de acessar este formulário?</strong></label><br>
+        <input type="radio" name="conhecimento" id="iconhecimento">
+        <label for="iconhecimento">sim, já sabia deste antes, mas nunca procurei ouvir as suas músicas</label><br>
+        
+        <input type="radio" name="conhecimento" id="iconhecimento1">
+        <label for="iconhecimento1">sim, além de já saber também sei e ouço as múscias da banda virtual</label><br>
+        
+        <input type="radio" name="conhecimento" id="iconhecimento2">
+        <label for="iconhecimento2">Apenas ouvi dizer, mas não pesquisei a fundo</label><br>
+        
+        <input type="radio" name="conhecimento" id="iconhecimento3">
+        <label for="iconhecimento3">Não, nunca soube disso até agora</label>
+    </p>
+
+    <p id="avaliacao3">
+        <label for="igostei"><strong>Qual destas músicas abordadas você gostou?</strong></label><br>
+
+        <input type="checkbox" name="feel" id="feel">
+        <label for="feel">Feel good inc.</label><br>    
+
+        <input type="checkbox" name="clint" id="clint">
+        <label for="clint">Clint weastwood</label><br>
+
+        <input type="checkbox" name="cracker" id="cracker">
+        <label for="cracker">Cracker sland</label>
+    </p>
+
+    <p id="botoes-finais">
+        <input type="submit" value="Enviar" class="botao-enviar">
+        <input type="reset" value="Limpar" class="botao-limpar">
+    </p>
+</fieldset>
+
 <footer class="referencias">
     <section>
         <p class="f1">Estes foram as três músicas escolhas por mim por conta de serem as minhas favoritas;</p>
@@ -3111,3 +3275,4 @@ botao.addEventListener('click', () => {
 </script>
 </body>
 </html>
+
