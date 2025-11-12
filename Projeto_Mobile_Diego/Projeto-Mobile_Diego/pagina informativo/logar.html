@@ -379,7 +379,13 @@
             margin-left:-70px;
         }
 
+        html{
+            scroll-behavior: smooth;
+        }
+
         .barra-lateral{
+            position: sticky;
+            top: 25px;
            width: 17px; 
            height: 670px; 
            background-color: #043f7a; 
@@ -387,7 +393,7 @@
            margin-top: -75px; 
            border-radius: 9px; 
            transition: width 0.3s ease; 
-           z-index: 10;
+           z-index: 30;
         }
 
         .barra-lateral:hover {
@@ -410,7 +416,7 @@
 .barra-lateral .informacao1 {
     box-shadow: -8px 8px 5px rgba(0, 0, 0, 0.5); /* sombra suave ao redor */
     position: absolute;
-    top: 59px;
+    top: 5px;
     left: 35px;
     border-radius: 20px;
     font-size: 17px;
@@ -429,7 +435,7 @@
 .barra-lateral .informacao2 {
     box-shadow: -8px 8px 5px rgba(0, 0, 0, 0.5); /* sombra suave ao redor */
     position: absolute;
-    top: 162px;
+    top: 110px;
     left: 35px;
     border-radius: 20px;
     font-size: 17px;
@@ -448,7 +454,7 @@
 .barra-lateral .informacao3 {
     box-shadow: -8px 8px 5px rgba(0, 0, 0, 0.5); /* sombra suave ao redor */
     position: absolute;
-    top: 222px;
+    top: 171px;
     left: 35px;
     border-radius: 20px;
     font-size: 17px;
@@ -467,7 +473,7 @@
 .barra-lateral .informacao4 {
     box-shadow: -8px 8px 5px rgba(0, 0, 0, 0.5); /* sombra suave ao redor */
     position: absolute;
-    top: 282px;
+    top: 233px;
     left: 35px;
     border-radius: 20px;
     font-size: 17px;
@@ -486,7 +492,7 @@
 .barra-lateral .informacao5 {
     box-shadow: -8px 8px 5px rgba(0, 0, 0, 0.5); /* sombra suave ao redor */
     position: absolute;
-    top: 342px;
+    top: 292px;
     left: 35px;
     border-radius: 20px;
     font-size: 17px;
@@ -505,7 +511,7 @@
 .barra-lateral .informacao6 {
     box-shadow: -8px 8px 5px rgba(0, 0, 0, 0.5); /* sombra suave ao redor */
     position: absolute;
-    top: 402px;
+    top: 352px;
     left: 35px;
     border-radius: 20px;
     font-size: 17px;
@@ -524,7 +530,7 @@
 .barra-lateral .informacao7 {
     box-shadow: -8px 8px 5px rgba(0, 0, 0, 0.5); /* sombra suave ao redor */
     position: absolute;
-    top: 462px;
+    top: 412px;
     left: 35px;
     border-radius: 20px;
     font-size: 17px;
@@ -543,7 +549,7 @@
 .barra-lateral .informacao8 {
     box-shadow: -8px 8px 5px rgba(0, 0, 0, 0.5); /* sombra suave ao redor */
     position: absolute;
-    top: 522px;
+    top: 472px;
     left: 35px;
     border-radius: 20px;
     font-size: 17px;
@@ -562,7 +568,7 @@
 .barra-lateral .informacao9 {
     box-shadow: -8px 8px 5px rgba(0, 0, 0, 0.5); /* sombra suave ao redor */
     position: absolute;
-    top: 582px;
+    top: 532px;
     left: 35px;
     border-radius: 20px;
     font-size: 17px;
@@ -1507,7 +1513,7 @@ font-weight: 800;
         }
 
         .paragrafo30{
-            top: 835px;
+            top: -35px;
             left: -289px;
             text-align: center;
             font-size: 1.3em;
@@ -1518,7 +1524,7 @@ font-weight: 800;
         }
 
         .paragrafo31{
-            top: 845px;
+            top: -60px;
             left: 20vw;
             text-align: center;
             font-size: 1.3em;
@@ -1529,7 +1535,7 @@ font-weight: 800;
         }
 
         .paragrafo32{
-            top: 895px;
+            top: -95px;
             left: -289px;
             text-align: center;
             font-size: 1.3em;
@@ -1540,7 +1546,7 @@ font-weight: 800;
         }
 
         .extra5{
-            top: 1030px;
+            top: -110px;
             left: 339px;
             text-align: center;
             font-size: 1.3em;
@@ -1551,7 +1557,7 @@ font-weight: 800;
         }
 
         .extra6{
-            top: 1090px;
+            top: -100px;
             left: -289px;
             text-align: center;
             font-size: 1.3em;
@@ -1802,7 +1808,8 @@ font-weight: 800;
         width: 30%;           /* largura do vídeo */
         margin: 100px auto;      /* centraliza e dá espaçamento superior */
         aspect-ratio: 16 / 9;    /* mantém proporção do vídeo */
-        background-color: transparent;  /* só pra visualizar o contêiner */
+        background-color: rgba(0, 0, 255, 0.076);  /* só pra visualizar o contêiner */
+        border-radius: 5%;
         overflow: hidden;
         top: 190px;
         }
@@ -2022,7 +2029,8 @@ font-weight: 800;
         width: 30%;           /* largura do vídeo */
         margin: 100px auto;      /* centraliza e dá espaçamento superior */
         aspect-ratio: 16 / 9;    /* mantém proporção do vídeo */
-        background-color: blue;  /* só pra visualizar o contêiner */
+        background-color: rgba(0, 0, 255, 0.076);  /* só pra visualizar o contêiner */
+        border-radius: 5%;
         overflow: hidden;
         top: -300px;
         }
@@ -2261,7 +2269,7 @@ font-weight: 800;
 
         section.imagemextra2{
             background-color: darkgray;
-            top: 650px;
+            top: -585px;
             position: relative;
             height: 800px;
         }
@@ -2281,9 +2289,10 @@ font-weight: 800;
         width: 30%;           /* largura do vídeo */
         margin: 100px auto;      /* centraliza e dá espaçamento superior */
         aspect-ratio: 16 / 9;    /* mantém proporção do vídeo */
-        background-color: blue;  /* só pra visualizar o contêiner */
+        background-color: rgba(0, 0, 255, 0.076);  /* só pra visualizar o contêiner */
+        border-radius: 5%;
         overflow: hidden;
-        top: -40vh;
+        top: -55vh;
         }
 
         div.videoclipe2 > iframe {
@@ -2297,7 +2306,7 @@ font-weight: 800;
         }
 
         .imagem37{
-            top: 496px;
+            top: -350px;
             left: 996px;
             width: 350px;
             height: 410px;
@@ -2308,7 +2317,7 @@ font-weight: 800;
         }
 
         .imagem38{
-            top: 580px;
+            top: -320px;
             left: 9px;
             width: 620px;
             height: 280px;
@@ -2319,7 +2328,7 @@ font-weight: 800;
         }
 
         .imagem39{
-            top: 590px;
+            top: -400px;
             left: 899px;
             width: 450px;
             height: 290px;
@@ -2330,7 +2339,7 @@ font-weight: 800;
         }
 
         .imagem40{
-            top: 786px;
+            top: -330px;
             left: 199px;
             width: 450px;
             height: 290px;
@@ -2341,7 +2350,7 @@ font-weight: 800;
         }
 
         .imagem41{
-            top: 800px;
+            top: -380px;
             left: 889px;
             width: 620px;
             height: 280px;
@@ -2358,7 +2367,7 @@ font-weight: 800;
             line-height: 2rem;
             position: relative;
             z-index: 1;
-            top: 132vh;
+            top: -25vh;
             text-align: center;
         }
 
@@ -2368,7 +2377,7 @@ font-weight: 800;
             padding: 20px;
             padding-bottom: 40%;
             position: relative;
-            top: 990px;
+            top: -223px;
         }
 
         div.video2 > iframe{
@@ -2387,7 +2396,7 @@ font-weight: 800;
             text-decoration: underline;
             font-size: 1.9em;
             position: relative;
-            top: 390px;
+            top: -817px;
             left: 25px;
 
         }
@@ -2398,7 +2407,7 @@ font-weight: 800;
             font-size: 2em;
             line-height: 3rem;
             position: relative;
-            top: 420px;
+            top: -795px;
             left: 25px;
         }
 
@@ -2409,7 +2418,7 @@ font-weight: 800;
             display:inline-block;
             line-height: 2rem;
             position: relative;
-            top: 505px;
+            top: -715px;
             left: 25px;
         }
 
@@ -2421,7 +2430,7 @@ font-weight: 800;
 
         section.imagemextra3{
             background-color: darkgray;
-            top: 250px;
+            top: -330px;
             position: relative;
             height: 800px;
         }
@@ -2469,68 +2478,150 @@ font-weight: 800;
             top: 180px;
         }
 
-        .f1, .f2, .f3, .f4, .f5{
+        .f1, .f2, .f3, .f4, .f5, .f6{
             position: absolute;
         }
 
         .f1{
             left: 01%;
+            font-size: 1em;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: #d3d3d354 !important;
         }
 
         .f2{
             left: 35.5%;
             top: 25%;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
 
         .f3{
             left: 75%;
             top: 25%;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
 
         .f4{
-            top: 125%;
+            top: 65%;
             left: 20%;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .imagem42{
+            top:40%;
+            left: 9%;
+            width: 190px;
+            height: 190px;
+            padding:0px 0px;
+            position: absolute;
         }
 
         .f5{
-            top: 20%;
-            left: 16.5%;
+            top: 15%;
+            left: 18%;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
 
         .lincar{
             position: absolute;
-            color: #ffffff;
-            top: 65%;
+            color: lightblue;
+            text-decoration: none;
+            top: 45%;
             left: 43%;
+        }
+
+        .foto{
+            max-width: 10%;
+            position: absolute;
+            height: 3%;
+            width: 1%;
+            display: block;
+            top: 45.5%;
+            left: 41.5%;
+        }
+
+        .lincar:hover{
+            color: rgba(255, 0, 0, 0.526);
+            text-decoration: underline;
         }
 
         .lincar1{
             position: absolute;
-            color: #ffffff;
-            top: 85%;
-            left: 43%;
+            color: lightblue;
+            text-decoration: none;
+            top: 65%;
+            left: 42.5%;
+        }
+
+        .foto1{
+            max-width: 10%;
+            position: absolute;
+            height: 3%;
+            width: 1%;
+            display: block;
+            top: 65.3%;
+            left: 41%;
+        }
+
+        .lincar1:hover{
+            color: rgba(255, 0, 0, 0.526);
+            text-decoration: underline;
         }
 
         .lincar2{
             position: absolute;
-            color: #ffffff;
-            top: 105%;
+            color: lightblue;
+            text-decoration: none;
+            top: 85%;
             left: 43%;
         }
 
-        .canal-oficial{
+        .foto2{
+            max-width: 10%;
+            position: absolute;
+            height: 3%;
+            width: 1%;
+            display: block;
+            top: 85.5%;
+            left: 41.5%;
+        }
 
+        .lincar2:hover{
+            color: rgba(255, 0, 0, 0.526);
+            text-decoration: underline;
+        }
+
+        .canal-oficial{
+            max-width: 10%;
+            position: absolute;
+            height: 33%;
+            width: 30%;
+            display: block;
+            border-radius: 50%;
+            top: 45%;
+            left: 81%;
+        }
+
+        .f6{
+            top: 80%;
+            left: 80.5%;
+            font-weight: 600;
+            font-size: 1.2em;
+            font-family:'Times New Roman', Times, serif;
         }
 
         footer.referencias{
+            box-shadow: 0px 0px 20px 9px rgba(0, 0, 0, 0.681);
             position: relative;
             width: 101%;
             height: 155px;
+            padding-bottom: 20%;
             background-color: rgb(19, 17, 146);
-            top: 1050px;
+            top: 8px;
             left:-8px;
             z-index: 11;
         }
+
     </style> 
     <div class="menu-navegacao">
     <img class="icone-favoritos" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile-13-r.png">
@@ -2558,14 +2649,14 @@ font-weight: 800;
         <span>
         <a class="informacao1" href="#">Playlists</a>
         <p class="capitulo">Capítulos sobre</p>
-        <a class="informacao2" href="CAP.4:A história da banda no universo Goorilaz">Capítulo 1;</a>
-        <a class="informacao3" href="#">Capítulo 2;</a>
-        <a class="informacao4" href="#">Capítulo 3;</a>
-        <a class="informacao5" href="#">Capítulo 4;</a>
-        <a class="informacao6" href="#">Capítulo 5;</a>
-        <a class="informacao7" href="#">Capítulo 6;</a>
-        <a class="informacao8" href="#">Capítulo 7;</a>
-        <a class="informacao9" href="#">Capítulo 8;</a>
+        <a class="informacao2" href="#c1">Capítulo 1;</a>
+        <a class="informacao3" href="#c2">Capítulo 2;</a>
+        <a class="informacao4" href="#c3">Capítulo 3;</a>
+        <a class="informacao5" href="#c4">Capítulo 4;</a>
+        <a class="informacao6" href="#c5">Capítulo 5;</a>
+        <a class="informacao7" href="#c6">Capítulo 6;</a>
+        <a class="informacao8" href="#c7">Capítulo 7;</a>
+        <a class="informacao9" href="#c8">Capítulo 8;</a>
         <div class="linha-suave"></div>
         <div class="reta1"></div>
         <div class="reta2"></div>
@@ -2617,7 +2708,7 @@ font-weight: 800;
 <h1 class="título">DESCUBRA A HISTORIA DA BANDA VIRTUAL</h1>
 <h4 class="éisso">NESTE SITE VOCÊ IRÁ LER UM CONTEÚDO SOBRE OS GOORILAZ:
 </br></br><ul><li>contendo 8 capítulos e uma página de playlists com as músicas dos goorilaz.</li></ul></h4>
-<h3 class="cap1">CAP.1: A banda blur</h3>
+<h3 class="cap1" id="c1">CAP.1: A banda blur</h3>
 <p class="paragrafo1">A primeira e única banda virtual chamada “goorilaz” inovou</br> a maneira de produzir músicas, misturando hits que fizeram ir além</br> de qualquer outros cantores e bandas,  incentivando os outros artistas</br> da época até hoje em misturar sons a partir da criatividade, revolucionando o</br> mercado consumidor de músicas.</p>
 <img class="imagem1" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile-23.jpg">
 <p class="paragrafo2">Para início de conversa, exisita uma banda surgida no Reino Unido em 1989 chamada “blur”,</br> ela era formada por: Damon Albarn (o vocalista), Graham Coxon (guitarrista), Alex James (baixista)</br> e Dave Rowntree (baterista); Está era uma banda que não se importava em ter que criar os hits</br> que fazeriam sucesso naquela época, evitando fazer os cortes de cabelo considerados “inteligentes”</br> para um sucesso por fama em aparência física, nem mesmo ao sons que faziam sucesso no</br> momento, o que eles tinham mesmo era criatividade, pois mais tarde as empresas que pudiam-se<br> alugar o studeo para gravar o dísco não mais se importavam com o que a letra carrega,<br> mas sim apenas o dinheiro, algo sem personalidade e repetitivo, sem agregar em nada à sociedade; </p>
@@ -2626,7 +2717,7 @@ font-weight: 800;
 <img class="imagem3" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile-25.jpg">
 <p class="paragrafo4">Partindo disto, em 1998, quando o vocalista Damon Albarn viajou para os Estados Unidos,</br> mais precisamente em Londres, ele passou a divir o mesmo apartamento com o Jamie Hewlett,</br> após se conhecerem e tornarem amigos, ao assitirem a um canal de televisão chamado MTV,</br> aonde o contexto era, pelos olhos de Hewllet (e também de Damon): um músico que cantava algo</br> sem importância, sem atitude e sem substância (criatividade), enquanto o clip era nada mais e nada menos</br> do que mulheres coreografando da maneira mais sútil a se pensar;</p>
 <img class="imagem4" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile-26.jpg">
-<h3 class="cap2">CAP.2: Criando a primeira banda virtual</h3>
+<h3 class="cap2" id="c2">CAP.2: Criando a primeira banda virtual</h3>
 <p class="paragrafo5">Vendo isto, Hewlett comenta que era um “inferno” de conteúdo sem</br> substância, não podendo conter mais esta frustração os dois começaram</br> um novo trabalho, criar uma banda virtual como uma crítica a sociedade,</br> isto por um lado é bem irônico. Aos afazeres, Hewlett (31 anos na época)</br> começou a desenhar os esboços dos personagens que montariam a banda virtual,</br> pois ele é um cartografo, enquanto isso, Damon (30 anos na época) usava</br> um instrumento musical eletrônico chamado de ‘Suzuki Omnichord’, que é capaz</br> de reproduzir sons de instrumentos variados que conhecemos apenas com o clique do botão; </p>
 <img class="imagem5" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/">
 <p class="paragrafo6">Desenhista Hewllet criou os designs dos personagens, formando um quarteto,</br> são eles:</br>
@@ -2635,7 +2726,7 @@ font-weight: 800;
     Noodle;</br>
     Murdoc;</p>
 <img class="imagem6" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile-28.jpg">
-<h3 class="cap3">CAP.3:Os integrantes da banda</h3>
+<h3 class="cap3" id="c3">CAP.3:Os integrantes da banda</h3>
 <p class="paragrafo7">2-d: É o vocalista da banda, note que seus olhos estão totalmente brancos, pois na história fictícia do personagem, ao ficar com os olhos assim, ele sente emoções fortes.</p>
 <img class="imagem7" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile-29.jpg">
 <p class="paragrafo8">Rassel: Baterista da banda, mesmo que seus olhos também sejam brancos, não significa algo como ao 2-d, mas na ficcção, ele tem a alma de seus passados amigos mortos em um tiroteio, representados pelo olograma fantamagórico, isto é, ao Russel tocar sua bateria, este fantasma consegue se desprender do corpo do mesmo.</p>
@@ -2644,8 +2735,8 @@ font-weight: 800;
 <img class="imagem9" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile31.webp">
 <p class="paragrafo10">Murdoc: Baixista da banda, sua história no universo de goorilaz é bem extensa, mas ele sendo o responsável por juntar o quarteto.</p>
 <img class="imagem10" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile-31.jpg">
-<h3 class="cap4">CAP.4:A história da banda no universo Goorilaz</h3>
-<h3 class="cap5">CAP.5:Inspirações para determinadas músicas</h3>
+<h3 class="cap4" id="c4">CAP.4:A história da banda no universo Goorilaz</h3>
+<h3 class="cap5" id="c5">CAP.5:Inspirações para determinadas músicas</h3>
 <p class="paragrafo20">O cantor que enterpreta a voz de 2-D, Damon Albarn,<br> teve inspirações em criar músicas que critícam a sociedade atual<br> com os maiores problemas da sociedade. Isto sendo bem irônico a parte por conta<br> de ser uma banda virtual em que pontua<br> e avisa os sérios erros de uma sociedade em que estamos.</p>
 <p class="paragrafo21">Um dos pilares do som dos Gorillaz é a mistura de gêneros.<br> Damon sempre foi fascinado por cruzar fronteiras musicais<br> — e isso é evidente desde o primeiro álbum, Gorillaz (2001).<br>
 Ele combinou hip-hop, dub, rock alternativo, música eletrônica e reggae,<br> criando uma sonoridade que refletia o mundo globalizado.</p>
@@ -2676,7 +2767,7 @@ Músicas como Tomorrow Comes Today<br> e On Melancholy Hill refletem esse sentim
 <img class="imagem18" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile-38-r.png">
 <img class="imagem22" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile-42.jpg">
 <img class="imagem23" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile-44.jpg">
-<h3 class="cap6">CAP.6:Feel Good Inc.</h3>
+<h3 class="cap6" id="c6">CAP.6:Feel Good Inc.</h3>
 <h5 class="abc3"><strong>Ilusão da Felicidade Moderna</strong></h5>
 
 <div class="videoclipe"><iframe width="560" height="315" src="https://www.youtube.com/embed/HyHNuVaZJ-k?si=DuEbop4-Qkdh2mun" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -2771,7 +2862,7 @@ Mesmo com um som dançante, a canção carrega um peso existencial,<br> algo que
 </section>
 
 
-<h3 class="cap7">CAP.7:Clintweast Wood</h3>
+<h3 class="cap7" id="c7">CAP.7:Clintweast Wood</h3>
 
 <div class="videoclipe1"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/1V_xRb0x9aw?si=RkC3s6dcbnIh0YbB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
@@ -2896,7 +2987,7 @@ Murdoc, o manipulador; 2-D, o sonhador; Russel, o guardião; Noodle, a força mi
 </p>
 </section>
 
-<h3 class="cap8">CAP.8:Cracker Sland</h3>
+<h3 class="cap8" id="c8">CAP.8:Cracker Sland</h3>
 
 <div class="videoclipe2"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/1V_xRb0x9aw?si=RkC3s6dcbnIh0YbB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
@@ -2991,15 +3082,16 @@ Enquanto o refrão repete<br> “On Cracker Island, it was born”, o tom soa qu
 
 <footer class="referencias">
     <section>
-        <p class="f1">Estes foram as três músicas escolhas por mim por conta de serem as minhas favoritas</p>
-        <!--imagem--> <p class="f4">&ogon; todos os direitos reservados</p>
+        <p class="f1">Estes foram as três músicas escolhas por mim por conta de serem as minhas favoritas;</p>
+        <img class="imagem42" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile-69-r.png"> <p class="f4">&trade; todos os direitos reservados</p>
         <p class="f2">Aqui são os sites de onde retirei a tradução das músicas:</p>
-        <a href="#" class="lincar">site de letra traduzida</a>
-        <a href="#" class="lincar1">site de letra traduzida</a>
-        <a href="#" class="lincar2">site de letra traduzida</a>
-        <p class="f3">Vá ao canal oficial dos goorilaz no youtube</p>
-        <!--imagem link-->
-        <p class="f5">Neste site</p>
+        <img class="foto" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile-70-r.png"><a href="https://www.letras.com/gorillaz/65687/traducao.html" target="_blank" class="lincar">site de letra traduzida-feel good inc.</a>
+        <img class="foto1" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile-70-r.png"><a href="https://www.letras.com/gorillaz/16606/traducao.html" target="_blank" class="lincar1">site de letra traduzida-clint weastwood</a>
+        <img class="foto2" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile-70-r.png"><a href="https://www.letras.mus.br/gorillaz/cracker-island-feat-thundercat/traducao.html" target="_blank" class="lincar2">site de letra traduzida-cracker sland</a>
+        <p class="f3">Vá ao canal oficial dos goorilaz no youtube:</p>
+        <a href="https://www.youtube.com/channel/UCfIXdjDQH9Fau7y99_Orpjw" target="_blank"><img class="canal-oficial" src="/Projeto_Mobile_Diego/Projeto-Mobile_Diego/assets/imagens/trab-mobile-71.jpg"></a>
+        <p class="f6">Official Music Videos</p>
+        <p class="f5">Neste site:</p>
     </section>
 </footer>
 <script>
